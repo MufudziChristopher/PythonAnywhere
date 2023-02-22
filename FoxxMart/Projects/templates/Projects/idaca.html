@@ -1,0 +1,472 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>IDACA - Cape Town International Student Support Services</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'idaca/css/main.css' %}" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="{% static 'idaca/IDACA.jpeg' %}" type="image/x-icon">
+
+
+
+    <noscript>
+        <link rel="stylesheet" href="{% static 'idaca/css/noscript.css' %}" /></noscript>
+</head>
+
+<body class="is-preload">
+
+                </header>
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+
+        <!-- One -->
+        <section class="banner style1 orient-left content-align-center image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+            <div class="content">
+                <header>
+                    <h1>IDACA</h1>
+                    <p>Cape Town International Student Support Services</p>
+                </header>
+                <p class="major">IDACA student support services is a small, highly professional and personalized organization. We provide international students with all the assistance they need to locate themselves easily in Cape Town and at the <a href="https://https:www.uct.ac.za"> University of Cape Town</a> as well as with on - going support and services throughout the semester abroad. <br>The welfare of the students and professional service to our American partner universities and colleges is and always has been our mission.
+
+                </p>
+                <ul class="actions stacked">
+                    <li><a href="#about" class="button big wide smooth-scroll-start">About Idaca</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#universities" class="button big wide smooth-scroll-start">For Universities</a></li>
+                    <li><a href="#parents" class="button big wide smooth-scroll-start">For Parents</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#students" class="button big wide smooth-scroll-start">For Students</a></li>
+                    <li><a href="#team" class="button big wide smooth-scroll-start">Meet the Team</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#contact" class="button big wide smooth-scroll-start">Contact Details</a></li>
+                    <li><a href="{% url 'Projects:gallery' %}" class="button big wide smooth-scroll-start">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="image" style="background-color: #000; margin-right: 20px;">
+                <video id="bgvid" width="100%" height="100%" autoplay loop muted onclick="document.getElementById('bgvid').muted = !document.getElementById('bgvid').muted">
+                    <source src="{% static 'idaca/videos/Video1.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+ <!-- About IDACA Section -->
+        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="about">
+            <div class="content">
+                <h2>About IDACA </h2>
+                <p>Ida Cooper and her associates have looked after over 2000 students since their service to American universities and colleges was initiated in 1995. Throughout the decades, they have maintained a high level of professionalism in their dealings with the American universities and with the local agencies of relevance to student welfare in Cape Town. <br>
+
+                    IDACA handles all the practicalities involved in making the transition to Cape Town a trouble-free and comfortable experience.<br>
+
+                    Located within 15 minutes of the UCT campus, IDACA associates are on 24 hour call for the students and importantly, act as a direct liaison between students, UCT, partner universities and colleges in the United States as well as with parents.<br>
+
+                    On arrival, the personalized IDACA orientation program very rapidly familiarizes students with their immediate surrounds as well as with the city.<br>
+
+                    A small team of carefully selected UCT senior students assist with familiarization and integration into the UCT community and the city.<br>
+
+                    Their on-going program of talks, dinners and outings offers opportunities for students to engage with the history of South Africa as well as with the challenges facing this complex and diverse nation.<br>
+
+                    Opportunities to explore the natural beauty and the cultural diversity of the city and finding opportunities to volunteer in diverse organizations are facilitated by IDACA.<br>
+
+                    Being a small organization, IDACA is easily able to cater to the individualized needs of students.</p>
+                <ul class="actions stacked">
+                    <li><a href="#" class="button big wide smooth-scroll-start">Back to Top </a></li>
+                </ul>
+            </div>
+
+            <div class="image" style="background-color: #fff;">
+                <img src="{% static 'idaca/images/001.jpg' %}" style="width: 100%; height: 100%;" alt="University of Cape Town" />
+            </div>
+        </section>
+
+        <!-- END About IDACA Section -->
+
+        <!-- For Universities Section -->
+        <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="universities">
+            <div class="content">
+                <h2>For Universities</h2>
+
+                <p>Since 1995, IDACA has had a long and close relationship with specific colleges and universities in the United States, as well as with UCT.</p>
+                <ul>
+                    <li> IDACA provides direct, reliable, ongoing and effective communication between UCT, IAPO, the United States consulate and students while they are in Cape Town.</li>
+                    <li> Senior Associates with decades of experience of working with international students are available on 24 hour call.</li>
+                    <li> Being a small, personalized organization, IDACA is easily able to cater for the individual needs of students.</li>
+                    <li> A bi-semester newsletter to all partners in the U.S.</li>
+                </ul>
+                <h3>Key services for students include:</h3>
+                <ul>
+                    <li>Pre-departure advice</li>
+                    <li>Arranging and confirming a wide variety of secure, comfortable and convenient accommodation within walking distance of UCT campus.</li>
+                    <li>Ensuring students are met at Cape Town International Airport on arrival.</li>
+                    <li>Assisting the students with the move to their respective accommodation for the semester.</li>
+                    <li>Providing a personalized orientation to UCT and its immediate surrounds during the first few days in Cape Town.</li>
+                    <li>Hosting a dinner for all IDACA students to meet each other.</li>
+                    <li>Employing a small,carefully selected team of senior UCT student associates who maintain regular contact with the semester abroad students and provide advice and information on the city. The student associates facilitate socializing with local students.</li>
+                    <li>Arranging a social history tour of Cape Town as well as outings during the first few days of arrival.</li>
+                    <li>Familiarizing students with transport in Cape Town.</li>
+                    <li>Acting as a “safety-net” should this be necessary during the semester.</li>
+                    <li>Scheduling any medical appointments necessary and providing transport as well as any follow-up services should this be required.</li>
+                    <li>Assisting with finding voluntary work placements other than those offered by student organizations at UCT.</li>
+                    <li>Hosting a number of talks, discussions throughout the semester which provide insight into the complex history of the country as well as its current challenges.</li>
+                    <li>Organizing outings and hikes which allow students to experience and explore the city of spectacular contrasts.</li>
+                </ul>
+                <ul class="actions stacked">
+                    <li><a href="#" class="button big wide smooth-scroll-start">Back to Top </a></li>
+                </ul>
+            </div>
+
+            <div class="image">
+                <img src="{% static 'idaca/images/002.jpg' %}" alt="UCT Upper Campus" />
+            </div>
+
+        </section>
+
+        <!-- END For Universities Section -->
+
+        <!-- For Parents Section -->
+        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="parents">
+            <div class="content">
+                <h2>For Parents</h2>
+                <ul>
+                    <li>Senior Associates of IDACA are available as a direct point of contact between you and your sons and daughters while they are in Cape Town.</li>
+                    <li>IDACA provides reliable, efficient and direct communication between you, UCT and the US Consulate in Cape Town.</li>
+                    <li>The website will keep you up to date with current events in Cape Town and at UCT.</li>
+                    <li>IDACA Senior Associates are able to advise you should you need information if planning a visit to Cape Town.</li>
+                    <li>Assurance that your son or daughter is one of a small group supported by experienced staff whose primary concern is the welfare of the visiting students.</li>
+                </ul>
+
+                <h2>Frequently Asked Questions:</h2><br>
+                <h4><strong>Will someone meet my son/daughter at the airport?</strong></h4>
+                <p>Students are met at Cape Town International Airport by the <a href="http://www.iapo.uct.ac.za">International Academic Programmes Office UCT</a> (IAPO) mentor students who will show them to the transport provided by IAPO and take them to their accommodation. Should the time of arrival be after 8.00 pm, IDACA will fetch them. </p>
+                <h4><strong>If my son/daughter is ill, will there be someone to advise and assist her?</strong></h4><br>
+                <p>Yes, they will be able to call an IDACA Senior Associate who will advise her and set up any medical appointments necessary. Appointments are made at <a href="www.students.uct.ac.za/students/support/health-counselling/student-wellness">UCT’s Student Wellness Services Centre</a> or at a medical practice close to campus and student houses. This medical practice has decades of experience caring for both students as well as residents in the area.</p>
+                <h4><strong>Will my son/daughter be safe in Cape Town?</strong></h4><br>
+                <p>Like in any other city in the world, they will always need to be vigilant. They will need to heed the advice from IAPO and IDACA during their respective orientation programs. Detailed advice on keeping safe in Cape Town is also available on the <a href="#">IAPO website( guidelines on safety and health)</a> and that of <a href="http://eap.ucop.edu/ForParents/Pages/health_safety.aspx">UCEAP.</a><br><br>
+                    UCT has an active campus safety and control unit which operates on campus as well as on the pedestrian routes in the residential areas close to campus. The local police station is within 10 minutes of the houses and IDACA Senior Associates are on call for any concerns or emergencies.</p>
+                <h4><strong>Is the IDACA accommodation within easy access to banks, shops, food outlets, transport and medical facilities?</strong></h4><br>
+                <p>Yes, all of these are within walking distance of the houses as well as the campus.</p>
+                <ul class="actions stacked">
+                    <li><a href="#" class="button big wide smooth-scroll-start">Back to Top </a></li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="{% static 'idaca/images/003.jpg' %}" alt="Top of Lions Head" />
+            </div>
+
+        </section>
+        <!-- End For Parents Section -->
+
+
+        <!-- For Students Section -->
+        <section class="wrapper style1 align-center" id="students">
+            <div class="inner">
+                <h2>For Students</h2>
+                <p></p>
+                <div class="items style1 medium onscroll-fade-in">
+
+
+                    <section>
+                        <span class="icon style2 major fa-suitcase"></span>
+                        <h3>Pre-departure Tips</h3>
+                        <p>The best preparation before your semester abroad is to research South Africa: read up on the history, politics, current events (<a href="https://www.mg.co.za">Mail and Guardian </a>provides good press coverage.), theater, music and natural resources as well as watch movies and read novels. Communicate with US students from your home university who have studied at UCT for invaluable advice on Cape Town and the university. Read the materials on the study abroad programs provided by your home university as well as by UCT and keep an open mind!</p>
+                        <br>
+
+                    </section>
+
+
+                    <section>
+                        <span class="icon style2 major fa-plane"></span>
+                        <h3>When you arrive in Cape Town</h3>
+                        <p>Most students arrive excited to be in Cape Town, tired from long-haul flights, disorientated by the time-changes but ready to go. Very quickly, the support and advice from IDACA will help you to get your bearings. The IDACA and IAPO orientation programs are fun and a great way to meet people, both local and international students. You’ll orientate yourself in the beautiful “Mother City”, a melting-pot of cultures that will be home to you for a semester.</p>
+                        <br><br>
+
+                    </section>
+
+
+                    <section>
+                        <span class="icon style2 major fa-home"></span>
+                        <h3>Accomodation</h3>
+                        <p>A priority for IDACA is the well-being and comfort of students while they are Cape Town. To this end, a good network of houses and landlords ensures accommodation of a very high standard. The houses are comfortable, secure and well maintained. All are located within walking distance of UCT’s main campus and are close to shops, restaurants, banks and transport. IDACA also works closely with UCT’s student housing administrators as some semester abroad students prefer to live in UCT student residences.</p>
+                        <br>
+
+                    </section>
+
+
+                    <section>
+                        <span class="icon style2 major fas fa-volume-up"></span>
+                        <h3>2019 Events</h3>
+                        <p>IDACA organizes a range of events throughout the semester. In addition to the dinner and outings during the orientation program, a series of talks and discussions with academics, activists and local people is on offer should students be interested. Outings to festivals, music, theatre and places of historical interest, such as Robben Island are organized by IDACA but at the student's own cost. Highlights of events happening in Cape Town are advertised regularly on the website, as well as on the <a href="https://web.facebook.com/IDACASouthAfrica">IDACA facebook page.</a></p>
+                        <br><br><br>
+
+                    </section>
+
+
+                    <section>
+                        <span class="icon style2 major fas fa-bolt"></span>
+                        <h3>Volunteer in Cape Town</h3>
+                        <p>Voluntary work in Cape Town and through the various sports clubs and societies at UCT, provides great opportunities to engage with local people and gain insight into a wide range of current socio-economic and environmental issues. Not only does this work offer semester abroad students the chance to utilize and develop their skills from which others can benefit but it is also a way to learn about and from the many different cultural groups in Cape Town. Voluntary work during a semester abroad also allows one to work alongside local students and in local organizations.</p>
+                        <br>
+                        <br>
+
+                    </section>
+
+
+                    <section>
+                        <span class="icon style2 major fas fa-paper-plane"></span>
+                        <h3>Activities in & around Cape Town</h3>
+                        <p>Cape Town, the “Mother City” on the tip of Africa, a cosmopilitan city with a complex history and spectacular beauty will be home to you for a semester. A city of contrasts from wealth to poverty and a melting pot of cultures, it offers endless possibilities to explore and experience mountains, beaches, wine farms, inner city creative developments, the Bo-Kaap and District Six (the area of forced removals under apartheid) to the lively Victoria and Albert area in the working harbor and small creative restaurants and shops of the currently cool Bree and Loop Streets.</p>
+                        <ul class="actions stacked">
+
+                    </section>
+
+
+
+                    <!-- Clubs and Societies Block -->
+                    <section>
+                        <span class="icon style2 major fa-users"></span>
+                        <h3>Clubs & Societies</h3>
+                        <p>There are more than 100 student societies and organizations at UCT reflecting a wide range of interests. These include academic, religious, cultural, social and political fields of interest. Each is run by students and any student may be a member. These clubs and societies allow students to become active members of a community on campus that is stimulating and opens up new challenges and opportunities.<br><br><br>
+                            For more information & detail visit the <a href="https://www.dsa.uct.ac.za/student-development/student-societies-organisations/overview">UCT website.</a>
+                            <br><br>
+                            Clubs and societies which many SSA students enjoy and through which they meet local students include the following:</p>
+                        <ul>
+                            <li><a href="https://www.shawco.org/">SHAWCO</a> which has volunteer opportunities in their medical and educational outreach programs.</li><br>
+                            <li><a href="https://www.mountainandski.sports.uct.ac.za/">The Mountain and Ski Club</a> which offers great opportunities for weekend climbs and hikes out of the city.</li><br>
+                            <li>The Underwater Club for those of you who scuba dive.</li><br>
+                            <li>The Surf Club.</li><br>
+                            <li>Dance of various kinds.</li><br>
+                            <li><a href="http://www.uctchoir.uct.ac.za/">The UCT Choir</a></li><br>
+                            <li>Writing for the student weekly newspaper <a href="https://www.varsitynewspaper.co.za/">"Varsity"</a></li><br>
+                            <li>Various other sports clubs.</li>
+                        </ul>
+                    </section>
+
+                    <!-- END Clubs and Societies Block -->
+
+                    <!-- Application and Admission Block -->
+                    <section>
+                        <span class="icon style2 major fas fa-edit"></span>
+                        <h3>Application and Admission</h3>
+                        <p>For information on applications and admission to UCT’s semester abroad programs, refer to UCT’s <a href="http://www.iapo.uct.ac.za">IAPO</a> website and consult the International Office at your home university.<br>
+                            If you are a student at one of our partner universities or colleges in the US, contact the International Office at your home university for procedures and deadlines.<br><br><br><br><br>
+
+                            <strong>Application Procedure:</strong></p>
+                        <ul>
+                            <li>Go to the <a href="https://www.uct.ac.za">UCT website</a> for general information about UCT and to their <a href="https://www.iapo.uct.ac.za">International Academic Programme Office website</a> for specific information on the application process.</li>
+                            <li>Your home university or college will send you the IDACA information and application forms for accommodation.</li>
+                            <li>Once you have been accepted at UCT for the semester, your completed IDACA applications will be sent to us to process and confirm.</li>
+                        </ul><br><br>
+                        <p>N.B. Should you not be a student at one of our partner universities or college in the US and should you want assistance from IDACA during your semester abroad in Cape Town, please contact us directly once you have been accepted by UCT.</p>
+                    </section>
+                    <!-- END Application and Admissions Block -->
+
+
+                    <!-- News And Feedback Block -->
+                    <section>
+                        <span class="icon style2 major fa-newspaper"></span>
+                        <h3>News & Feedback</h3>
+                        <ul class="alt">
+                            <li><a href="http://idaca.co.za/wp-content/uploads/2018/07/Ida-Cooper-Associates-Newsletter-June-2018.pdf">IDACA newsletter June 2018</a></li><br>
+                            <li><a href="https://us7.campaign-archive.com/?u=601eb0dd6642c09c25045b26f&id=a0fbd3bfaa">UCT Newsletter June 2018</a></li><br>
+                            <li><a href="http://idaca.co.za/wp-content/uploads/2018/06/Ida-Cooper-Associates-Newsletter-December-2017.pdf">IDACA newsletter December 2017 (PDF)</a></li><br>
+                            <li><a href="http://idaca.co.za/wp-content/uploads/2017/12/Newsletter-July-2017.pdf">IDACA newsletter July 2017 (PDF)</a></li><br>
+                            <li><a href="http://mailchi.mp/uct/october-2017-update-from-the-university-of-cape-town-1901337?e=a35d44bbda">IAPO newsletter December 2017</a></li><br>
+                            <li><a href="http://thetab.com/us/ucsb/2016/03/24/every-question-get-asked-tell-people-live-south-africa-1302">Every question I get asked when I tell people I live in South Africa, by Hannah Gunter, UCSB, in Cape Town 2016</a></li><br>
+                            <li><a href="https://alumni.eap.ucop.edu/uct-student-story?srctid=1&erid=144535&trid=c08d835b-80d4-403d-9894-49ee97483256">My UCT experience, by Nicholas Martinez, UC, in Cape Town 2016</a></li><br>
+                            <li><a href="http://idaca.co.za/wp-content/uploads/2016/06/20-December-2016-Newsletter.pdf">IDACA newsletter July 2016, (Word document, 2.6MB )</a></li><br>
+                            <li><a href="http://idaca.co.za/wp-content/uploads/2016/06/20-December-2016-Newsletter.pdf">IDACA newsletter December 2016 (PDF)</a></li><br>
+                            <li><a href="http://idaca.co.za/wp-content/uploads/2016/06/Mufudzi-Nhamoines.pdf">Report on Robben Island visit, 2016 by Mufudzi Christopher (PDF)</a></li><br>
+                            <li><a href="http://idaca.co.za/wp-content/uploads/2016/06/Brien-Griffin.pdf">Feedback on a 2016 semester by Brien Griffin (PDF)</a></li><br>
+                            <li><a href="https://alumni.eap.ucop.edu/file/documents/newsletter/UCEAP-Alumni-Newsletter---July-2016.pdf">University of California Alumni newsletter 2016, featuring an article about students’ meeting with Archbishop Desmond Tutu</a></li><br>
+                            <li><a href="http://idaca.co.za/wp-content/uploads/2017/05/REFLECTIONS-ON-THE-PRINCETON-SOUTH-AFRICA-STUDY-ABROAD-PROGRAM-%E2%80%93-1996.pdf">Reflections on the Princeton South Africa study abroad program – 1996 (PDF)</a></li><br>
+                        </ul>
+                    </section>
+                    <!-- END News and Feedback Block -->
+
+
+                    <!-- Safety in Cape Town Block -->
+                    <section>
+                        <span class="icon style2 major fa-lock"></span>
+                        <h3>Safety in Cape Town</h3>
+                        <p>As in any city in the world, you need to be vigilant and responsible.Once you arrive, you need to take careful note of the advice given by IDACA and IAPO during their orientation programs. Pre-departure, you should access more detailed information on safety in Cape Town on the IAPO and and your home university websites.<br><br>
+                        </p>
+                    </section>
+                    <!-- END Safety in Cape Town Block -->
+
+                    <!-- General Safety Block -->
+                    <section>
+                        <span class="icon style2 major fa-lock"></span>
+                        <h3>General Safety Guidelines</h3>
+                        <ul>
+                            <li>Do not walk alone at night.</li>
+                            <li>Always check with locals if in doubt about areas you want to visit, especially at night.</li>
+                            <li>Only use public transport during day light hours\ commuter hours and use transport recommended by IDACA at night and for trips further afield.</li>
+                            <li>Make use of UCT’s extensive network of Jammie Shuttles around the areas close to campus as well as to UCT’s Hiddingh Campus situated in the upper area of the city center.</li>
+                            <li>Being vigilant when walking off campus especially with laptops, phones and cameras.</li>
+                            <li>Keep emergency numbers and numbers of your house-mates in your phone.</li>
+                        </ul>
+                    </section>
+                    <!-- END General Safety Block -->
+
+                    <!-- Accommodation Safety Block -->
+                    <section>
+                        <span class="icon style2 major fa-lock"></span>
+                        <h3>Accommodation Safety Guidelines</h3>
+                        <ul>
+                            <li>It is mandatory to let IDACA know when you will be leaving leaving Cape Town for more than 24 hours. This is a requirement from your home universities.</li>
+                            <li>It is also required that you register, before leaving home, with the US <a href=" https://step.state.gov/step/">Smart Traveller Enrollment Programme (STEP)</a> thereby enrolling your trip with the U.S. Consulate in Cape Town.</li>
+                            <li>You are expected to keep in regular internet contact and respond to up-dates from your home universities.</li>
+                            <li>We make every effort to provide you with safe and secure accommodation within walking distance of UCT campus. You, however, need to be responsible about following the security measures set up in each house.</li>
+                            <li><a href="www.staff.uct.ac.za/staff/services/properties-services/campus-protection-services
+                                ">UCT Campus Protection Services</a> operates on campus as well as in the residential area close to campus.
+                            </li>
+                            <li>There are two Police Stations within five to ten minutes of all the IDACA houses and apartments.</li>
+                            <li>You need to let house-mates know where you will be going especially at night and have their numbers as well as emergency numbers in your phones.</li>
+                            <li>Always alert IDACA should you leave Cape Town on short trips as well as trips further afield.</li>
+                            <li>IDACA will arrange for your personal contact details to be forwarded to the US Consulate in Cape Town.</li>
+                        </ul>
+
+                    </section>
+
+                    <!-- END Accommodation Safety Block -->
+                    <ul class="actions stacked">
+                        <li><a href="#" class="button big wide smooth-scroll-start">Back to Top </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Meet The  Team Section -->
+        <section class="wrapper style1 align-center" id="team">
+            <div class="inner">
+                <h2>Meet the Team</h2>
+
+            </div>
+
+            <!-- Gallery -->
+            <div class="gallery style2 medium lightbox onscroll-fade-in">
+                <article>
+                    <a href="{% static 'idaca/images/gallery/fulls/Menzi.jpg' %}" class="image">
+                        <img src="{% static 'idaca/images/gallery/thumbs/Menzi.jpg' %}" alt="" />
+                    </a>
+                    <div class="caption">
+                        <h3><strong>Menzi Ndlovu</strong></h3>
+                        <p>Menzi has an undergraduate degree in PPE from UCT as well as post-graduate study in economics and transitional justice. Currently he is working as a junior security analyst and fitness consultant before starting a masters. He has a passion for learning, travelling, eating and philosophizing. He also has an enthusiasm for sports and love of the outdoors. Most importantly, he is a firm advocate of economic justice, contributing his research to solving the various inequalities that plague society. He is an avid admirer of versifiers like Wocka-Flocka Flame and Fetty-Wap and Steve Harvey is his favourite athlete. He looks forward to welcoming semester abroad students and ensuring that their stay is thoroughly enriching.</p>
+                    </div>
+                </article>
+                <article>
+                    <a href="{% static 'idaca/images/gallery/fulls/Sitha.jpg' %}" class="image">
+                        <img src="{% static 'idaca/images/gallery/thumbs/Sitha.jpg' %}" alt="" />
+                    </a>
+                    <div class="caption">
+                        <h3><strong>Sithabile Kuuya</strong></h3>
+                        <p>Sithabile is in her final year of a law degree at UCT. She involves herself as much as possible in extra-curricular activities at UCT including serving as President of Lean In UCT . Her You Tube channel Miss Madeline is based on Lifestyle, Beauty and Christian videos. She enjoys a night out on the town but prefers hearty engagement over good food and in great company. She looks forward to meeting and connecting with new SSA students and showing them the city she loves and knows well. She lives in Woolsack, a UCT student residence on campus and is the IDACA student associate for those students who request to live there for the semester.</p>
+                    </div>
+                </article>
+                <article>
+                    <a href="{% static 'idaca/images/gallery/fulls/Mufudzi.jpg' %}" class="image">
+                        <img src="{% static 'idaca/images/gallery/thumbs/Mufudzi.jpg' %}" alt="" />
+                    </a>
+                    <div class="caption">
+                        <h3><strong>Mufudzi Christopher</strong></h3>
+                        <p>Mufudzi is currently in his final year of a Commerce degree in Information Systems. He has lived in Cape Town for 10 years. He is well integrated into the UCT community and has first- hand knowledge of how to move around the city and explore Cape Town to the fullest. He enjoys keeping fit and leading expeditions up, down and around the slopes of the Table Mountain Nature Reserve. He is sociable and especially enjoys meeting new people and experiencing Cape Town with them as if it is his first time all over again.</p>
+                    </div>
+                </article>
+                <article>
+                    <a href="{% static 'idaca/images/gallery/fulls/Tessa.jpg' %}" class="image">
+                        <img src="{% static 'idaca/images/gallery/thumbs/Tessa.jpg' %}" alt="" />
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <srong>Tessa Chittenden</srong>
+                        </h3>
+                        <p>Tessa graduated with a PPE degree from UCT and continues with post-graduate studies in Politics. She is currently involved with Phasama Sedi, an NPO connecting local entrepreneurs with Business Consultancy students at UCT. She has lived in Cape Town her whole life, and so enjoys showing new people the many hidden treasures that the city has to offer. She enjoys staying fit and being in the outdoors, especially on the mountains and in the ocean. She also has a great interest in the cultural scene in Cape Town, ranging from visual art to theatre. She looks forward to sharing her passion for Cape Town with semester abroad students.</p>
+
+                    </div>
+                </article>
+                <article>
+                    <a href="{% static 'idaca/images/gallery/fulls/Jarrod.jpg' %}" class="image">
+                        <img src="{% static 'idaca/images/gallery/thumbs/Jarrod.jpg'%}" alt="" />
+                    </a>
+                    <div class="caption">
+                        <h3><strong>Jarrod Kueler</strong></h3>
+                        <p>Jarrod is in his final year of a Bachelor of Science in Mathematics and Physics, with the intention of teaching. He enjoys connecting with people, places and nature, and with that comes the keenness of sharing such experiences, especially with international students. He has made many study-abroad friends over the past few years through the UCT Choir which they have all expressed was their absolute favorite way to assimilate into the culture of Cape Town, and South Africa as a whole. He looks forward to a great year with positive and really good experiences.</p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+        <!-- End Meet the Team Section -->
+            <br><br><br><br>
+            <br><br><br><br>
+            <br><br><br><br>
+
+
+        <!-- Contact Details -->
+        <section class="banner style2 orient-centre content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="contact">
+            <div class="content" style="">
+                <header>
+                    <h1 style="text-align: center">Contact Details</h1>
+                </header>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone Number</th>
+                                <th>Email Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Isabella Scholts</td>
+                                <td>+27 (0)83 726 3628</td>
+                                <td>bscholts@mweb.co.za</td>
+                            </tr>
+                            <tr>
+                                <td>IDACA</td>
+                                <td>+27 (0)21 762 3724</td>
+                                <td>idacasouthafrica@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>UCT International Office</td>
+                                <td>+27 21 (0)650 2822 / 3740</td>
+                                <td>iapo@uct.ac.za</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    <ul class="actions stacked  content-align-center">
+                        <li><a href="#" class="button big wide smooth-scroll-start">Back to Top </a>
+                    </ul>
+            </div>
+            <div class="image" style="background-color: #000; ">
+
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="wrapper style1 align-center">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://web.facebook.com/IDACASouthAfrica/" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+                </ul>
+                <p style="color: #000">&copy; Design: <a href="{% url 'home:home' %}" style="color: #000">Mufudzi Christopher</a>.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'idaca/js/jquery.min.js' %}"></script>
+    <script src="{% static 'idaca/js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'idaca/js/jquery.scrolly.min.js' %}"></script>
+    <script src="{% static 'idaca/js/browser.min.js' %}"></script>
+    <script src="{% static 'idaca/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'idaca/js/util.js' %}"></script>
+    <script src="{% static 'idaca/js/main.js' %}"></script>
+
+</body>
+
+</html>

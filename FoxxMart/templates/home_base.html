@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mufuddzi Christopher Online Portfolio</title>
+    <meta name="description" content="Online Portfolio for Mufudzi Christopher Web Development Solutions" />
+    <meta name="keywords" content="online portfolio showcasing what Mufudzi Christopher has to offer in a way that represents who he is and what he is capable of. I hope you have a pleasant experience." />
+      <meta name="author" content="Mufudzi Christopher" />
+    <link rel="shortcut icon" href="{% static 'images/brand.png' %}">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/demo.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/component.css' %}" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="pages-nav">
+      <div class="pages-nav__item">
+        <a class="link link--page" href="#page-home">Home</a>
+      </div>
+      <div class="pages-nav__item">
+        <a class="link link--page " href="#page-Maxim-Kids">Maxim Kids</a>
+      </div>
+      <div class="pages-nav__item">
+        <a class="link link--page " href="#page-Hospitality-Pro-Recruitment">Hospitality Pro</a>
+      </div>
+      <div class="pages-nav__item">
+        <a class="link link--page  " href="#page-3rd-Axis">3rd Axis</a>
+      </div>
+      <div class="pages-nav__item">
+        <a class="link link--page  " href="#page-The-Collective">The Collective</a>
+      </div>
+      <div class="pages-nav__item">
+        <a class="link link--page  " href="#page-NXT-LVL-Tech">VFS Canada</a>
+      </div>
+      <div class="pages-nav__item pages-nav__item--small">
+        <a class="link link--page link--faded  " href="#page-tgy">The Golden Years</a>
+      </div>
+
+      <div class="pages-nav__item pages-nav__item--small">
+        <a class="link link--page link--faded " href="#page-idaca">IDACA</a>
+      </div>
+      <div class="pages-nav__item pages-nav__item--small">
+        <a class="link link--page link--faded " href="#page-africanus">African Utility Suppliers</a>
+      </div>
+
+
+    </nav>
+    <!-- /navigation-->
+    <!-- pages stack -->
+    <div class="pages-stack">
+      <!-- page -->
+      <div class="page" id="page-home">
+        <!-- Blueprint header -->
+        <header class="bp-header cf">
+          <span class="bp-header__present">Online Portfolio <span class="bp-tooltip bp-icon bp-icon--about" data-content="Online Portfolio for Mufudzi Christopher Web Development Solutions"></span>
+          </span>
+          <h1 class="bp-header__title">Mufudzi Christopher</h1>
+          <p class="bp-header__desc">Freelance Web Developer and Website Designer </p>
+            <div class=" pages-nav__item--social">
+              <a class="link link--social link--faded" target="_blank" href="mailto://mufudzichristopher@outlook.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a class="link link--social link--faded" target="_blank" href="https://linkedin.com/in/mufudzi-christopher-nhamoinesu">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a class="link link--social link--faded" target="_blank" href="https://github.com/MufudziChristopher">
+                <i class="fa fa-github"></i>
+              </a>
+              <a class="link link--social link--faded" target="_blank" href="{% static 'MCN_Resume.pdf' %}">
+                <i class="fa fa-file-pdf-o"></i>
+              </a>
+            </div>
+        </header>
+        <p> {% if messages %} {% for message in messages %}
+        <div class="alert alert-warning alert-dismissable page" role="alert">
+          <button class="close" data-dismiss="modal">
+            <small>
+              <sup>x</sup>
+            </small>
+          </button>
+          {{ message }}
+        </div> {% endfor %} {%  endif %} </p>
+        <!-- services
+    ================================================== -->
+        <section id='services' class="s-services light-gray">
+          <div class="row section-header" data-aos="fade-up">
+
+
+            <!-- <h3 class="h4">Web Application Development</h3>
+            <p> I learnt how to build web applications in Visual Studio. This was also my first opportunity to collaborate in a team on a real world systems development project. Using C#, ASP.NET MVC 4, css, bootsrap, javascript, and the kitchen sink we built a stunning web application that was responsive and user friendly. I am always in development mode because I employ an agile approach when working on projects and tasks. I plan to develop something new and exciting the world's never seen before. Watch this space. </p>
+
+            <h3 class="h4">Website Design</h3>
+            <p> I have a sweet tooth for style and presentation which makes me a unique asset when creativity is a requirement. I understand people and what they want out of a website, what attracts them to one and keeps them coming back. I am innovative and not afraid to experiment. All of these talents give me an almost super human ability to consistently deliver a sophisticated, hand-crafted solution guaranteed to make you smile. <br> -->
+
+
+          </div>
+
+        </section>
+        <!-- end s-services -->
+        <img class="poster" src="{% static 'images/brand.png' %}" alt="img06" />
+      </div>
+      <div class="page" id="page-Maxim-Kids">
+        <header class="bp-header cf">
+          <h1 class="bp-header__title">Maxim Boxing Promotion</h1>
+          <p class="bp-header__desc">Welcome to the portfolio section dedicated to showcasing my work on the WordPress website development project for Maxim Kids. This section will provide an in-depth look at the updates and upgrades I have made to the website, as well as the processes and techniques used to ensure the success of the project. With my extensive experience as a freelance WordPress developer, I am confident in my ability to deliver high-quality results that meet the needs and expectations of my clients. This portfolio section serves as a testament to my skills and expertise, and I am proud to share it with you. This portfolio section highlights my work on the WordPress website development project for Maxim Kids, showcasing updates and upgrades made to the website. Get a glimpse of my expertise and quality results as a freelance WordPress developer. <a href="https://maximkids.org" target="_blank">Maxim Kids</a>
+          </p>
+          <p class="info">
+             </p>
+        </header>
+        <img class="poster" src="{% static 'images/maximkids.png' %}" alt="img06" />
+      </div>
+      <div class="page" id="page-Hospitality-Pro-Recruitment">
+        <header class="bp-header cf">
+          <h1 class="bp-header__title">Hospitality Pro Recruitment</h1>
+          <p class="bp-header__desc">A Multidimensional Recruitment Agency <a target="_blank" href="https://hospitalitypro.africa">Hospitality Pro Recruitment</a>
+          </p>
+          <p class="info"> This is a redisgn of a static single page website. Ive chosen it as a feature on my portfolio to showcase the iterations this website has gone through. An how the client was satisfied each time. A simple tool, an online business card if you willfor users to easily sign up for or request Hospitality Pro's recruitment services. You can access the prevous build here. </p>
+          <a href="https://hospitalitypro.africa/sandbox/old" target="_blank">Hospitality Pro Recruitment (Old)</a>
+        </header>
+      <a href="https://hospitalitypro.africa/sandbox/old" target="_blank">  <img class="poster" src="{% static 'images/hprologo.png' %}" alt="img06" /></a>
+      </div>
+      <!-- /page -->
+      <div class="page" id="page-3rd-Axis">
+        <header class="bp-header cf">
+          <h1 class="bp-header__title">3rd Axis</h1>
+          <p class="bp-header__desc">3D Printing Company based in Observatory, Cape Town <a href="{% url 'Axis:store' %}">3rd Axis</a>
+          </p>
+          <p class="info">During the midst of the Covid 19 Lockdown. I was contacted by a team looking for a web developer to lead the development team of a 3D printing company start-up initiative. I used the Python Django Rest Framework to develop this website. An eccomerce platform with CRM to quickly and efficiently manage stock and orders with an elegeant, almost transparent front end. I tried to create a shopping experience free from noise that was quick and fast but also smooth ans soothing. The front end loading makes product filtering easy and the quick access to your cart allows you to keep an close eye on you total. This website is simple yet robust with new features on the way. </p>
+        </header>
+        <a href="{% url 'Axis:store' %}"><img class="poster" src="{% static 'images/III-light.gif' %}" alt="img06" /></a>
+      </div>
+      <div class="page" id="page-The-Collective">
+        <header class="bp-header cf">
+          <h1 class="bp-header__title">The Collective</h1>
+          <p class="bp-header__desc">An Online Store showcasing limited edition designer goods. <a href="{% url 'Collective:store' %}"> The Collective</a>
+          </p>
+          <p class="info"> Addingthis eccomerce store to the collections allows users to brows multiple shops with one account.The stores are easy to set upand customise which brings your development costs way down. Its a store that gets straight down to the point, which is the products,or collection there of. Front end processing means you'll never have to wait for the page to load while viewing the products. </p>
+        </header>
+         <a href="{% url 'Collective:store' %}"> <img class="poster" src="{% static 'images/II-light.gif' %}" width="70" alt="img06" /></a>
+      </div>
+      <div class="page" id="page-NXT-LVL-Tech">
+        <header class="bp-header cf">
+          <h1 class="bp-header__title">VFS Canada</h1>
+          <p class="bp-header__desc">A Visa Facilitation Services Global application and tracking software for the VFS Canada, Benin - <a target="_blank" href="https://vfs-canada-online.df.r.appspot.com">VFS Canada</a>
+          </p>
+          <p class="info">This website uses a custom user model that enables users to better access its tools. The website is used to apply, track and monitor the status of your visa application. This particular version was for demonstration purposes outlining the important flows along the user journey. </p>
+        </header>
+         <a target="_blank" href="https://vfs-canada-online.df.r.appspot.com"><img class="poster" src="{% static 'images/vfscanada.png' %}" alt="img06" /></a>
+      </div>
+      <div class="page" id="page-tgy">
+        <header class="bp-header cf">
+          <h1 class="bp-header__title">The Golden Years</h1>
+          <p class="bp-header__desc">
+            <a href="https://thegoldenyears.com" target="_blank">The Golden Years</a>
+          </p>
+          </iframe>
+        </header>
+        <a href="https://thegoldenyears.com" target="_blank"><img class="poster" src="{% static 'images/tgylogo.png' %}" width="500" alt="img06" /></a>
+      </div>
+      <div class="page" id="page-idaca">
+        <header class="bp-header cf">
+          <h1 class="bp-header__title">IDA Cooper and Associates</h1>
+          <p class="bp-header__desc">
+              IDACA student support services is a small, highly professional and personalised organisation. We provide international students with all the assistance they need to locate themselves easily in Cape Town and at UCT as well as with on- going support and services throughout the semester abroad. The welfare of the students and professional service to our American partner universities and colleges is and always has been our mission.
+            <a target="_blank" href="{% url 'Projects:IDACA' %}"> IDA Cooper & Associates</a>
+          </p>
+          <p class="info"></p>
+        </header>
+        <a target="_blank" href="{% url 'Projects:IDACA' %}"><img class="poster" src="{% static 'idaca/idacalogo.png' %}" alt="img06" /></a>
+      </div>
+      <div class="page" id="page-africanus">
+        <header class="bp-header cf">
+          <h1 class="bp-header__title">African Utility Suppliers</h1>
+          <p class="bp-header__desc">
+              Wholesale suppliers of electric tools and equipment including maintenance services.
+            <a target="_blank" href="{% url 'Projects:africanus' %}"> African Utility Suppliers</a>
+          </p>
+          <p class="info"></p>
+        </header>
+        <a target="_blank" href="{% url 'Projects:africanus' %}"><img class="poster" src="{% static 'africanus/africanuslogo.png' %}" width="500" alt="img06" /><a>
+      </div>
+    </div>
+    <!-- /pages-stack -->
+    <button class="menu-button">
+      <span>Menu</span>
+    </button>
+    <script type="module" src="{% static 'home/js/classie.js' %}"></script>
+    <script type="module" src="{% static 'home/js/main.js' %}"></script>
+  </body>
+</html>
