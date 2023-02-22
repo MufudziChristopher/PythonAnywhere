@@ -4,6 +4,7 @@ from django.http import JsonResponse, HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from decimal import Decimal
 from django.conf import settings
+from taggit.models import Tag
 
 import json
 import datetime
@@ -32,18 +33,15 @@ def home(request):
     return render(request, 'home_base.html', {})
 
 
-def store(request):
+def store(request, category_slug=None):
     data = cartData(request)
-    print("data:", data)
-    form = ProductsForm(request.POST)
     cartItems = data['cartItems']
     order = data['order']
     items = data['items']
-    category = None
     products = Product.objects.all()
-    categorylist = Category.objects.annotate(total_products=Count('product'))
+    taglist = Tag.objects.annotate(total_products=Count('product'))
 
-    context = {'cartItems': cartItems, 'items': items, 'order': order, 'products':products , 'categorylist' : categorylist , 'shipping': False}
+    context = {'cartItems': cartItems, 'items': items, 'order': order, 'products':products, 'shipping': False}
     return render(request, 'Axis/store.html', context)
 
 
@@ -65,11 +63,9 @@ def product_details(request, pk):
     items = data['items']
     category = None
 
-    categorylist = Category.objects.annotate(total_products=Count('product'))
     product = Product.objects.get(id=pk)
     category = None
-    context = {'cartItems': cartItems, 'product':product , 'category_list' : categorylist ,'category' : category , 'shipping': False,}
-    print("Categry List: ", categorylist)
+    context = {'cartItems': cartItems, 'product':product,'category' : category , 'shipping': False,}
     return render(request, 'Axis/product.html', context)
 
 
