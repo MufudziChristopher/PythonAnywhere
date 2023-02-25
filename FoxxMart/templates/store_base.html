@@ -99,10 +99,11 @@
               <a><img id="axis_spinner" src="{% static 'images/III-light.gif' %}" height="60" /></a> rdAxis<br><br>
 
           </div>
-          {% if user.is_authenticated %}
-          <h6>Logged in as: {{user.username}}</h6>
-          {% endif %}
+
         </span>
+        {% if user.is_authenticated %}
+        <h6>Logged in as: {{user.username}}</h6>
+        {% endif %}
         <hr>
         <nav>
 

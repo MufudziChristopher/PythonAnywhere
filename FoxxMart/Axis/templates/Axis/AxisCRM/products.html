@@ -44,7 +44,7 @@
 				<tr>
 					<th>Product</th>
 					<th>Name</th>
-					<th>Category</th>
+					<th>Tags</th>
 					<th>Stock</th>
 					<th>Price</th>
 					<th>Actions</th>
@@ -54,7 +54,7 @@
 					<tr>
 						<td style="max-width: 100px"><span><img src="{{product.imageURL1}}"  width="100%"/></span></td>
 						<td>{{product.name}}</td>
-						<td>{{product.category}}</td>
+						<td>{{product.tags}}</td>
 						<td>{{product.stock}}</td>
 						<td>R{{product.price}}</td>
 						<td><a class="btn btn-sm btn-primary" href="{% url 'Axis:update_product' product.id %}">Update</a><a class="btn btn-sm btn-danger" href="{% url 'Axis:delete_product' product.id %}">Delete </a></td>

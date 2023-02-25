@@ -79,19 +79,21 @@
         <!-- Blueprint header -->
         <header class="bp-header ">
 
-            <span>T H E C O<img id="collective_spinner" src=" {% static 'collective/images/II-light.gif' %}" style="width: 2%;" />  E C T I V E<span class="bp bp-icon-about"></span></span>
-            <br>
+          <span>
+            <div class="">
+                <p>T H E  C O <img src="{% static 'images/II-light.gif' %}" height="30" /> E C T I V E</p>
 
-            {% if user.is_authenticated %}
-            <h6>Logged in as: {{user.username}}</h6>
-            {% endif %}
+            </div>
+
+          </span>
+          {% if user.is_authenticated %}
+          <h6>Logged in as: {{user.username}}</h6>
+          {% endif %}
+          <hr>
             <nav>
-<!--
-                <a onclick="darkMode()">
-                    <ion-icon title="Dark Mode" size="small" name="contrast-outline"></ion-icon>
-                </a> -->
+
                 <a href="{% url 'home:home' %}" title="Online Portfolio">
-                  <ion-icon src="{% static 'ion-icons/home-outline.svg' %}" size="small"></ion-icon><br>Home
+                  <ion-icon src="{% static 'ion-icons/home-outline.svg' %}" size="large"></ion-icon><br>Home
                 </a>
                 <a href="{% url 'Collective:store' %}" title="Online Store">
                   <ion-icon src="{% static 'ion-icons/storefront-outline.svg' %}" size="large"></ion-icon><br>Shop

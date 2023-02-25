@@ -36,7 +36,7 @@
 </div>
 
 <div class="barr">
-    <section>
+    <section style="display: none" >
         <button id="showLeft"></button>
         <button id="showRight"></button>
         <button id="showtTop"></button>
@@ -64,7 +64,7 @@
 
             <tr>
                 <td>
-                    <ion-icon data-product={{item.product.id}} data-action="cancel" class="chg-quantity update-cart" size="large" src="{% static 'ion-icons/close-circle-outline.svg' %}"></ion-icon>
+                    <ion-icon data-product={{item.product.id}} data-action="cancel" class="chg-quantity update-cart" title="Remove from Cart" size="large" src="{% static 'ion-icons/close-circle-outline.svg' %}"></ion-icon>
                 </td>
                 <td>
                     <a href="{% url 'Axis:product_details'  item.product.id %}"> <img class="img slider" src="{{ item.product.imageURL1 }}" width="200" height="200" /></a>

@@ -41,7 +41,7 @@ def store(request, category_slug=None):
     products = Product.objects.all()
     taglist = Tag.objects.annotate(total_products=Count('product'))
 
-    context = {'cartItems': cartItems, 'items': items, 'order': order, 'products':products, 'shipping': False}
+    context = {'cartItems': cartItems, 'items': items, 'order': order, 'products':products, 'shipping': False, 'taglist': taglist}
     return render(request, 'Axis/store.html', context)
 
 
@@ -185,7 +185,7 @@ def processOrder(request):
 
 def dashboard(request):
     orders = Order.objects.all().order_by('-status')[0:5]
-    customers = Customer.objects.all()
+    customers = AxisCustomer.objects.all()
 
     total_customers = customers.count()
 
@@ -202,7 +202,7 @@ def dashboard(request):
 
 
 def customer(request, pk):
-    customer = Customer.objects.get(id=pk)
+    customer = AxisCustomer.objects.get(id=pk)
     orders = customer.order_set.all()
     shippingDetails = ShippingAddress.objects.all()
     total_orders = orders.count()
@@ -232,7 +232,7 @@ def createOrder(request):
         form = OrderForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/')
+            return redirect('/3rdAxis/')
 
     context =  {'action':action, 'form':form}
     return render(request, 'Axis/AxisCRM/order_form.html', context)
@@ -246,7 +246,7 @@ def updateOrder(request, pk):
         form = OrderForm(request.POST, instance=order)
         if form.is_valid():
             form.save()
-            return redirect('/order_details/' + str(order.id))
+            return redirect('/3rdAxis//order_details/' + str(order.id))
 
     context =  {'action':action, 'form':form}
     return render(request, 'Axis/AxisCRM/order_form.html', context)
@@ -254,8 +254,8 @@ def updateOrder(request, pk):
 def deleteOrder(request, pk):
     order = Order.objects.get(id=pk)
     if request.method == 'POST':
-        customer_id = order.customer.id
-        customer_url = '/customer/' + str(customer_id)
+        customer_id = order.AxisCustomer.id
+        customer_url = '/3rdAxis//customer/' + str(customer_id)
         order.delete()
         return redirect(customer_url)
 
@@ -273,7 +273,7 @@ def viewOrder(request, pk):
         form = OrderItemsForm(request.POST, instance=order)
         if form.is_valid():
             form.save()
-            return redirect('/customer/' + str(order.customer.id))
+            return redirect('/3rdAxis/customer/' + str(order.AxisCustomer.id))
 
     shippingDetails = customer.shippingAddress
     print("Shipping Address: ", customer.shippingAddress)
@@ -294,7 +294,7 @@ def addProduct(request):
         form = ProductsForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('/Axis/products/')
+            return redirect('/3rdAxis/products/')
 
     context =  {'action':action, 'form':form, 'name':name }
     return render(request, 'Axis/AxisCRM/order_form.html', context)
@@ -323,7 +323,7 @@ def updateProduct(request, pk):
             newproduct.save()
             # Without this next line the tags won't be saved.
             form.save()
-            return redirect('/products/')
+            return redirect('/3rdAxis/products/')
 
     context =  {'action':action, 'form':form, 'name':name, 'product': product, }
     return render(request, 'Axis/AxisCRM/order_form.html', context)
@@ -332,7 +332,7 @@ def deleteProduct(request, pk):
     product = Product.objects.get(id=pk)
     if request.method == 'POST':
         product.delete()
-        return redirect('/products')
+        return redirect('/3rdAxis/products')
 
     return render(request, 'Axis/AxisCRM/delete_item.html', {'item':product})
 
@@ -357,7 +357,7 @@ def addCategory(request):
         form = CategoriesForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/categories/')
+            return redirect('/3rdAxis/categories/')
 
     context =  {'action':action, 'form':form, 'name':name }
     return render(request, 'Axis/AxisCRM/order_form.html', context)
@@ -372,7 +372,7 @@ def updateCategory(request, pk):
         form = CategoriesForm(request.POST, instance=category)
         if form.is_valid():
             form.save()
-            return redirect('/categories/')
+            return redirect('/3rdAxis/categories/')
 
     context =  {'action':action, 'form':form, 'name':name }
     return render(request, 'Axis/AxisCRM/order_form.html', context)
@@ -381,6 +381,6 @@ def deleteCategory(request, pk):
     category = Category.objects.get(id=pk)
     if request.method == 'POST':
         category.delete()
-        return redirect('/categories/')
+        return redirect('/3rdAxis/categories/')
 
     return render(request, 'Axis/AxisCRM/delete_item.html', {'item':category})
