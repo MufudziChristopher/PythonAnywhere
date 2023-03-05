@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'Axis',
     'Collective',
     'Projects',
+    'Marz',
 
     'crispy_forms',
     'widget_tweaks',

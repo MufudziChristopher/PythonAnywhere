@@ -1,0 +1,54 @@
+{% extends 'marz_base.html' %}
+
+
+{% load static %}
+
+
+
+
+{% block body %}
+
+    {% for product in products %}
+		<section class="preview-wrap">
+			<div class="preview">
+				<div class="preview__img-wrap">
+					<div class="preview__img">
+						<div class="preview__img-inner" style="background-image:url({{product.imageURL1}})"></div>
+					</div>
+				</div>
+				<div class="preview__title">
+					<h2 class="preview__title-main"> <span class="oh"><span class="oh__inner">{{product.name1}}</span></span> <span class="oh"><span class="oh__inner">{{product.name2}}</span></span> </h2>
+					<p class="preview__desc">{{product.description1}}</p>
+				</div>
+			</div>
+		</section>
+	{% endfor %}
+
+
+		<section class="content-wrap">
+
+
+    {% for product in products %}
+			<div class="content">
+				<div class="content__group">
+					<div class="content__title"> <span class="oh"><span class="oh__inner">{{product.name1}}</span></span> <span class="oh"><span class="oh__inner">{{product.name2}}</span></span>
+					</div>
+					<div class="content__meta oh"><span class="oh__inner">{{product.price}}</span></div>
+					<div class="content__text">{{product.description1}}</div>
+				</div>
+				<div class="content__thumbs">
+					<div class="content__thumbs-item" style="background-image:url({{product.imageURL2}})"></div>
+					<div class="content__thumbs-item" style="background-image:url({{product.imageURL3}})"></div>
+					<div class="content__thumbs-item" style="background-image:url({{product.imageURL4}})"></div>
+					<div class="content__thumbs-item" style="background-image:url({{product.imageURL5}})"></div>
+				</div>
+			</div>
+        {% endfor %}
+
+			<button class="action action--back unbutton">
+				<svg width="25px" height="25px" viewbox="0 0 25 25">
+					<path d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"></path>
+				</svg> <span>Go back</span> </button>
+		</section>
+
+    {% endblock body %}

@@ -6,6 +6,7 @@ from .models import *
 from .models import *
 from Axis.models import *
 from Collective.models import *
+from Marz.models import *
 
 def registration_view(request):
 	if request.user.is_authenticated:
@@ -27,6 +28,7 @@ def registration_view(request):
                     user=account,
                     email=email,
                 )
+
 			login(request, account)
 
 			messages.success(request, ('Registration Successful'))
