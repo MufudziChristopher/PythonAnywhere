@@ -9,6 +9,18 @@
 	--color-link: #aaa;
 	--color-link-hover: #fff;
 	font-size: 18px;
+	--color-link: #aaa;
+	--color-link-hover: #fff;
+	font-size: 18px;
+}
+
+html {
+	scroll-behavior: initial;
+}
+
+html,body {
+	width: 100%;
+	min-height: 100%;
 }
 
 html {
@@ -23,8 +35,8 @@ html,body {
 body {
 	color: var(--color-text);
 	background-color: var(--color-bg);
-    background-image: url("../../images/bg1.jpg");
-    background-size: cover;
+	background-image: url("../../images/bg1.jpg");
+	background-size: contain;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin: 0;
@@ -33,7 +45,6 @@ body {
 
 .content-open {
 	height: 100vh;
-	overflow: hidden;
 }
 
 .oh {
@@ -223,9 +234,8 @@ main {
 .preview__img-inner {
 	width: 100%;
 	height: 100%;
-	background-position: 0 0;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: contain;
 }
 
 .content__meta {
@@ -321,6 +331,9 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
+	background-size: contain;
+	background-repeat: no-repeat;
+
 }
 
 .content--current {
@@ -366,6 +379,8 @@ main {
 
 .content__thumbs-item {
 	width: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
 	aspect-ratio: 1.5;
 }
 

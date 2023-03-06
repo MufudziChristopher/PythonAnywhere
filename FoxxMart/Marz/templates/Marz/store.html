@@ -8,8 +8,9 @@
 
 {% block body %}
 
-    {% for product in products %}
 		<section class="preview-wrap">
+      {% for product in products %}
+
 			<div class="preview">
 				<div class="preview__img-wrap">
 					<div class="preview__img">
@@ -18,22 +19,23 @@
 				</div>
 				<div class="preview__title">
 					<h2 class="preview__title-main"> <span class="oh"><span class="oh__inner">{{product.name1}}</span></span> <span class="oh"><span class="oh__inner">{{product.name2}}</span></span> </h2>
-					<p class="preview__desc">{{product.description1}}</p>
+					<p class="preview__desc">R{{product.price}}</p>
 				</div>
 			</div>
+      {% endfor %}
+
 		</section>
-	{% endfor %}
 
 
 		<section class="content-wrap">
 
+      {% for product in products %}
 
-    {% for product in products %}
 			<div class="content">
 				<div class="content__group">
 					<div class="content__title"> <span class="oh"><span class="oh__inner">{{product.name1}}</span></span> <span class="oh"><span class="oh__inner">{{product.name2}}</span></span>
 					</div>
-					<div class="content__meta oh"><span class="oh__inner">{{product.price}}</span></div>
+					<div class="content__meta oh"><span class="oh__inner">R{{product.price}}</span></div>
 					<div class="content__text">{{product.description1}}</div>
 				</div>
 				<div class="content__thumbs">
