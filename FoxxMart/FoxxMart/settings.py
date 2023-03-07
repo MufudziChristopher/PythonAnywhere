@@ -46,8 +46,11 @@ INSTALLED_APPS = [
     'Collective',
     'Projects',
     'Marz',
+    'FRGTN',
+    'TONYNE',
+    'LOOP',
 
-    'django_browser_reload',
+    # 'django_browser_reload',
     'crispy_forms',
     'widget_tweaks',
     'taggit',
