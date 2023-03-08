@@ -248,6 +248,10 @@ a:focus-visible {
 	cursor: default;
 	flex-direction: column;
 	justify-content: center;
+	background-image: url('../images/wallpaper.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	align-items: center;
 	margin-bottom: 250vh;
 	padding: 8rem 0 2rem;
@@ -376,7 +380,7 @@ a:focus-visible {
 
 .row__header {
 	width: 100%;
-	grid-gap: 2rem;
+	grid-gap: 8rem;
 	grid-template-rows: auto auto;
 	grid-template-columns: 4ch 1fr;
 	justify-content: start;
@@ -385,7 +389,7 @@ a:focus-visible {
 }
 
 .row__header span:last-child {
-	grid-column: 1/span 2;
+	grid-column: 10/span 2;
 }
 
 .row__content {

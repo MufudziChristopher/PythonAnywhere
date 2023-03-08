@@ -49,8 +49,9 @@ INSTALLED_APPS = [
     'FRGTN',
     'TONYNE',
     'LOOP',
+    'COURT',
 
-    # 'django_browser_reload',
+    'django_browser_reload',
     'crispy_forms',
     'widget_tweaks',
     'taggit',

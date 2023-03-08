@@ -26,6 +26,7 @@ urlpatterns = [
     path('', include('home.urls', namespace='home')),
     path('account/', include('account.urls', namespace='account')),
     path('Marz/', include('Marz.urls', namespace='Marz')),
+    path('COURT/', include('COURT.urls', namespace='COURT')),
     path('LOOP/', include('LOOP.urls', namespace='LOOP')),
     path('FRGTN/', include('FRGTN.urls', namespace='FRGTN')),
     path('TONYNE/', include('TONYNE.urls', namespace='TONYNE')),
