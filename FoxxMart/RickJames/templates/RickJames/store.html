@@ -1,0 +1,65 @@
+{% extends 'rick_base.html' %}
+
+
+{% load static %}
+
+
+
+
+{% block body %}
+
+
+		<div class="content">
+
+    {% for product in products %}
+
+			<figure class="content__item">
+				<h2 class="content__item-title oh"><span class="oh__inner">{{product.name1}}</span></h2>
+				<div class="content__item-img-wrap">
+					<div class="content__item-img" style="background-image:url({{product.image1}})"></div>
+				</div>
+				<figcaption class="content__item-caption"> {{product.description1}} </figcaption>
+			</figure>
+	{% endfor %}
+
+		</div>
+		<div class="content__overlay"></div>
+		<div class="preview">
+
+    {% for product in products %}
+
+			<div class="preview__item">
+				<div class="preview__item-img-outer">
+					<div class="preview__item-img-wrap">
+						<div class="preview__item-img" style="background-image:url({{product.image1}})"></div>
+					</div>
+				</div>
+				<h2 class="oh preview__item-title"><span class="oh__inner">{{product.name2}}</span></h2>
+				<h3 class="oh preview__item-subtitle"><span class="oh__inner">{{product.name1}}</span></h3>
+				<span class="oh preview__item-meta"><span class="oh__inner">ZAR{{product.price}}</span></span>
+				<div class="preview__item-box preview__item-box--left">
+					<h3 class="oh preview__item-box-title"><span class="oh__inner">Information</span></h3>
+					<p class="preview__item-box-desc">{{product.description1}}</p>
+				</div>
+				<div class="preview__item-box preview__item-box--right">
+					<h3 class="oh preview__item-box-title"><span class="oh__inner">Purchase Now</span></h3>
+					<p class="preview__item-box-desc">Coming Soon!
+                </p>
+				</div>
+			</div>
+
+		{% endfor  %}
+
+			<button class="preview__back unbutton" aria-label="Back to content">
+				<svg width="200" height="36" viewBox="0 0 50 9">
+					<path vector-effect="non-scaling-stroke" d="m0 4.5 5-3m-5 3 5 3m45-3h-77" />
+				</svg>
+			</button>
+		</div>
+
+
+
+
+
+
+    {% endblock body %}

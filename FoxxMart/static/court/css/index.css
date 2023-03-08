@@ -248,7 +248,7 @@ a:focus-visible {
 	cursor: default;
 	flex-direction: column;
 	justify-content: center;
-	/* background-image: url('../images/wallpaper.jpeg'); */
+	background-image: url('../images/wallpaper.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
