@@ -27,6 +27,7 @@ urlpatterns = [
     path('account/', include('account.urls', namespace='account')),
     path('Marz/', include('Marz.urls', namespace='Marz')),
     path('CourtneyLee/', include('COURT.urls', namespace='COURT')),
+    path('RickJames/', include('RickJames.urls', namespace='RickJames')),
     path('LOOP/', include('LOOP.urls', namespace='LOOP')),
     path('FRGTN/', include('FRGTN.urls', namespace='FRGTN')),
     path('TONYNE/', include('TONYNE.urls', namespace='TONYNE')),

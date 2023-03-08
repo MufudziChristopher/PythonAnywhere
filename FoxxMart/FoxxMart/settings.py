@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'TONYNE',
     'LOOP',
     'COURT',
-
+    'RickJames',
+    
     'django_browser_reload',
     'crispy_forms',
     'widget_tweaks',
